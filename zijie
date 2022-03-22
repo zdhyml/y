@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char str[1000];
+	char b;
+	int number=0;
+	int i=0;
+	printf("请输入句子");
+	gets(str);
+	strlwr(str);
+	printf("请输入单词");
+	scanf("%c",&b);
+	for(i;i<1000;i++)
+	{
+		if(b==str[i])
+			number++;
+
+	}
+	printf("%d",number);
+	return 0;
+}
